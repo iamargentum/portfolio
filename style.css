@@ -25,6 +25,10 @@
     font-weight: 500;
 }
 
+#bolderThanBolder {
+    font-weight: 800;
+}
+
 #boldest {
     font-weight: 900;
 }
