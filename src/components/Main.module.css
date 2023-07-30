@@ -1,0 +1,46 @@
+.main_container {
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-size: 5rem;
+    position: sticky;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_text_container {
+    gap: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.word_container {
+    width: 100%;
+    height: 6rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.word_hello {
+    right: 0;
+    position: absolute;
+}
+
+.word_world {
+    left: 0;
+    position: absolute;
+}
+
+.word_im {
+    right: 0;
+    position: absolute;
+}
+
+.word_rajat {
+    left: 0;
+    position: absolute;
+}
