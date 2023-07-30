@@ -18,10 +18,7 @@ for (var i = 0; i < slidingWordsParents.length; i++) {
 
 document.addEventListener("scroll", (e) => {
     var st = document.documentElement.scrollTop;
-    console.log("st is - ", st);
-    console.log("workSectionContent.offsetTop is - ", workSectionContent.offsetTop);
-    console.log("projectsSectionContent.offsetTop is - ", projectsSectionContent.offsetTop);
-    console.log("lifeSectionContent.offsetTop is - ", lifeSectionContent.offsetTop);
+    // console.log("st is - ", st);
     // console.log("window.innerHeight is ", window.innerHeight);
     if(st <= window.innerHeight) {
         document.documentElement.style.setProperty("--evenBottom", ((st/window.innerHeight).toString() + "em"));
@@ -40,7 +37,6 @@ document.addEventListener("scroll", (e) => {
     }
 
     if(st >= projectsSectionContent.offsetTop && st <= lifeSectionContent.offsetTop) {
-        console.log("inside projects strip sticky")
         if(!projectsStrip.classList.contains("topRightSticky")) {
             projectsStrip.classList.add("topRightSticky");
         }
