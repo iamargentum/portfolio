@@ -18,8 +18,6 @@ for (var i = 0; i < slidingWordsParents.length; i++) {
 
 document.addEventListener("scroll", (e) => {
     var st = document.documentElement.scrollTop;
-    // console.log("st is - ", st);
-    // console.log("window.innerHeight is ", window.innerHeight);
     if(st <= window.innerHeight) {
         document.documentElement.style.setProperty("--evenBottom", ((st/window.innerHeight).toString() + "em"));
         document.documentElement.style.setProperty("--oddBottom", "-" + ((st/window.innerHeight).toString() + "em"));
